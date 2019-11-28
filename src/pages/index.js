@@ -9,9 +9,15 @@ import {FaGulp} from 'react-icons/fa'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <h1 className="text-yellow">Hi people</h1>
+    <h2>Hi people</h2>
+    <h3>Hi people</h3>
+    <h4>Hi people</h4>
+    <h5>Hi people</h5>
+    <h6>Hi people</h6>
     <p>Welcome to your new Gatsby site.</p>
     <FaGulp />
+  
   </Layout>
 )
 
