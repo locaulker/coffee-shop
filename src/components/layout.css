@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 :root {
-  --mainCTA: #2d1ef1;
+  --mainCTA: #2d1e1f;
   --primaryColor: #ff9e09;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -24,9 +25,9 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: .25rem;
 }
 
-h1 {font-size: 5.5rem !important;}
-h2 {font-size: 3.5rem !important;}
-h3 {font-size: 3.0rem !important;}
+h1 {font-size: 5.2rem !important;}
+h2 {font-size: 3.0rem !important;}
+h3 {font-size: 2.5rem !important;}
 h4 {font-size: 2.5rem !important;}
 h5 {font-size: 1.8rem !important;}
 h6 {font-size: 1.4rem !important;}
@@ -41,7 +42,7 @@ h6 {font-size: 1.4rem !important;}
 }
 
 .default-background {
-  min-height: 94vh;
+  min-height: calc(100vh - (64.25px));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,9 +53,19 @@ h6 {font-size: 1.4rem !important;}
 }
 .default-background h1 {
   text-transform: uppercase;
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   font-weight: 700;
   margin-top: -6rem;
-  text-shadow: 2px 2px 8px rgba(255, 255, 255, .);
-  letter-spacing: 6px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+  letter-spacing: 1.5rem;
+}
+.btn-yellow {
+  color: var(--mainCTA);
+  border-color: var(--mainCTA);
+  padding: .8rem 1.2rem;
+  font-size: 1.4rem;
+}
+.btn-yellow:hover {
+  background-color: var(--mainCTA);
+  color: var(--mainWhite);
 }
