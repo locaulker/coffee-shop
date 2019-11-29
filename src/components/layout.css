@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 :root {
-  --mainCTA: #2d1e1f;
-  --primaryColor: #ff9e09;
+  --primaryColor: #2d1e1f;
+  --mainCTA: #ff9e09;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -23,13 +23,14 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Oswald', sans-serif !important;
   letter-spacing: .25rem;
+  color: var(--primaryColor);
 }
 
 h1 {font-size: 5.2rem !important;}
 h2 {font-size: 3.0rem !important;}
 h3 {font-size: 2.5rem !important;}
-h4 {font-size: 2.5rem !important;}
-h5 {font-size: 1.8rem !important;}
+h4 {font-size: 2.2rem !important;}
+h5 {font-size: 1.6rem !important;}
 h6 {font-size: 1.4rem !important;}
 
 .text-yellow {
@@ -37,7 +38,7 @@ h6 {font-size: 1.4rem !important;}
 }
 .cart-icon {
   cursor: pointer;
-  color: var(--primaryColor);
+  color: var(--mainCTA);
   font-size: 2rem;
 }
 
@@ -59,6 +60,7 @@ h6 {font-size: 1.4rem !important;}
   text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
   letter-spacing: 1.5rem;
 }
+
 .btn-yellow {
   color: var(--mainCTA);
   border-color: var(--mainCTA);
@@ -68,4 +70,19 @@ h6 {font-size: 1.4rem !important;}
 .btn-yellow:hover {
   background-color: var(--mainCTA);
   color: var(--mainWhite);
+}
+
+.footer {
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.4;
+}
+.footer p {
+  padding-top: 1.2rem;
+}
+.footer p span {
+  font-family: 'Oswald', sans-serif !important;
+  letter-spacing: 3px;
 }
