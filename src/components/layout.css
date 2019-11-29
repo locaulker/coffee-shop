@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 :root {
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: .25rem;
 }
 
-h1 {font-size: 4.5rem !important;}
+h1 {font-size: 5.5rem !important;}
 h2 {font-size: 3.5rem !important;}
 h3 {font-size: 3.0rem !important;}
 h4 {font-size: 2.5rem !important;}
@@ -38,4 +38,23 @@ h6 {font-size: 1.4rem !important;}
   cursor: pointer;
   color: var(--primaryColor);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient( rgba(var(--primaryColor), 0.5), rgba(var(--primaryColor), 0.5) );
+  /* background: linear-gradient( rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5) ); */
+  background-position: center;
+  background-size: cover;
+}
+.default-background h1 {
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  font-weight: 700;
+  margin-top: -6rem;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, .);
+  letter-spacing: 6px;
 }
